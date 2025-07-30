@@ -9,12 +9,12 @@
             <div class="flex">
                 <div class="w-1/3">imagem</div>
                 <div>
-                    <a href="/book?id=<?=$book['id']?>" class="font-semibold hover:underline"><?= $book['title'] ?></a>
-                    <div class="font-xs italic"><?= $book['author'] ?></div>
+                    <a href="/book?id=<?=$book->id?>" class="font-semibold hover:underline"><?= $book->title ?></a>
+                    <div class="font-xs italic"><?= $book->author ?></div>
                     <div class="text-xs italic">⭐⭐⭐⭐⭐(5 Avaliações)</div>
                 </div>
             </div>
-            <div class="text-sm"><?= $book['description'] ?></div>
+            <div class="text-sm"><?= $book->description ?></div>
         </div>
     <?php endforeach; ?>
 </section>
